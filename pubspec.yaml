@@ -29,29 +29,23 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.6
+  dio: ^5.7.0
+  easy_localization: ^3.0.0
   flutter:
     sdk: flutter
-  #State management
   flutter_bloc: ^8.1.6
-  #Code generation (used with cubit and retrofit )
+  flutter_native_splash: ^2.0.5
+  flutter_svg: ^2.0.10+1
   freezed: ^2.5.2
- #Annotations for the freezed code-generator.
   freezed_annotation: ^2.4.4
-  #Dependency injection
   get_it: ^8.0.0
-  #
+  intl: ^ 0.19.0
   json_annotation: ^4.9.0
-  # Automatically generate code for converting to and from JSON by annotating Dart classes.
   json_serializable: ^6.8.0
-  # A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc.
-  dio: ^5.7.0
+  pretty_dio_logger: ^1.4.0
   retrofit: ^4.4.1
   retrofit_generator: ^9.1.2
-  pretty_dio_logger: ^1.4.0
-  intl: ^ 0.19.0
-  easy_localization: ^3.0.0
-  flutter_native_splash: ^2.0.5
-
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_lints: ^3.0.0
@@ -68,8 +62,9 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
+    - assets/svgs/
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
