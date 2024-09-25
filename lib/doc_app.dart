@@ -2,7 +2,7 @@
 import 'package:doctors/Core/routing/routes.dart';
 import 'package:doctors/Core/theming/app_color.dart';
 import 'package:flutter/material.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'package:doctors/Core/routing/app_router.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -23,9 +23,11 @@ class DocApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: Routes.obBoarding,
           theme: ThemeData(
+            textTheme: GoogleFonts.interTextTheme(),
               scaffoldBackgroundColor: Colors.white,
               primaryColor: AppColor.primaryColor),
           onGenerateRoute: appRouter.generateRoute,
+          
         ));
   }
 }
